@@ -36,4 +36,9 @@ Open [http://localhost:8081](http://localhost:8081) в браузере.
 
 ### `npm run build`
 
-Сборка приложения в каталог 'public'.\
+Сборка приложения в каталог 'public'.
+
+### `npm run chromatic`
+
+Запуск chromatic.
+
