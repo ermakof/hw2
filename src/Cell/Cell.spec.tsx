@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cell } from './Cell';
+import { Cell } from '@src/Cell';
 import { render, screen, fireEvent } from '@testing-library/react';
 
 describe('Cell', () => {

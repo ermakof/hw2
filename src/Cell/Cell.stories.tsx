@@ -1,25 +1,26 @@
 import React, { useState, FC } from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { Cell } from './Cell';
 import { withKnobs, number, boolean } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Example/Cell',
   component: Cell,
   decorators: [withKnobs],
-};
+  title: 'Example/Cell',
+} as ComponentMeta<typeof Cell>;
 
-export const Static = () => {
-  return (
-    <Cell
-      num={number('num', 3)}
-      alive={boolean('alive', true)}
-      onClick={action('clicked')}
-      isRight={boolean('isRight', true)}
-      isBottom={boolean('isBottom', true)}
-      isLeft={boolean('isLeft', true)}
-    />
-  );
+const Template: ComponentStory<typeof Cell> = (args) => <Cell {...args} />;
+
+export const Static = Template.bind({});
+
+Static.args = {
+  num: number('num', 3),
+  alive: boolean('alive', true),
+  onClick: action('clicked'),
+  isRight: boolean('isRight', true),
+  isBottom: boolean('isBottom', true),
+  isLeft: boolean('isLeft', true),
 };
 
 export const Dynamic: FC = () => {
