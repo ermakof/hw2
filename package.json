@@ -15,7 +15,8 @@
     "lint:fix": "npx eslint --ext .js,.ts,.jsx,.tsx --fix src/",
     "test": "npx jest",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "npx chromatic --project-token=07c0525a595b"
   },
   "eslintConfig": {},
   "browserslist": {
