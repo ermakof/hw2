@@ -6,14 +6,13 @@ module.exports = {
   coverageDirectory: 'coverage',
   collectCoverage: true,
   collectCoverageFrom: [
-    'src/**/*.(js|jsx|ts|tsx)',
+    'src/**/*.(ts|tsx)',
     '!src/**/*.types.ts',
     '!src/types.ts',
     '!src/**/*.stories.tsx',
     '!src/app.jsx',
     '!src/**/index.jsx',
   ],
-  moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx'],
   testEnvironment: 'jsdom',
   reporters: [
     'default',
