@@ -4,7 +4,7 @@ import { Cell } from './Cell';
 import { withKnobs, number, boolean } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Cell',
+  title: 'Example/Cell',
   component: Cell,
   decorators: [withKnobs],
 };
